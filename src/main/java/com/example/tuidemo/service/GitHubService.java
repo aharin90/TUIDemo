@@ -40,7 +40,6 @@ public class GitHubService {
     public List<GHRepository> getRepositoriesByUserName(String name) throws IOException {
         GitHub gitHub = GitHub.connectAnonymously();
         GHUser user = gitHub.getUser(name);
-
         return user.listRepositories().toList();
     }
 }

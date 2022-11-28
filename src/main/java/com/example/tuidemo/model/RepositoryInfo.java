@@ -6,13 +6,12 @@ import java.util.List;
 
 public class RepositoryInfo {
 
-
     @ApiModelProperty(notes = "Repository Name", example = "myRepo")
-    String repoName;
+    private String repoName;
     @ApiModelProperty(notes = "Name of repository owner", example = "sampleUser")
-    String ownerName;
+    private String ownerName;
     @ApiModelProperty(notes = "List of repository branches")
-    List<Branch> branchList;
+    private List<Branch> branchList;
 
     public RepositoryInfo(String repoName, String ownerName, List<Branch> branchList) {
         this.repoName = repoName;
