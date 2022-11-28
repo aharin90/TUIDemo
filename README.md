@@ -11,10 +11,10 @@ Clone repository build jar with maven and run it with java -jar command
 
 As Docker image:
 Clone repository, cd to it and run
-docker build -t tui .
-docker run -p 8080:8080 tui
+<p><p>docker build -t tui .
+<p>docker run -p 8080:8080 tui
 
-After application would be started it is recommended to visit Api doc for it by url:
+<p><p>After application would be started it is recommended to visit Api doc for it by url:
 
 http://localhost:8080/swagger-ui/
 
